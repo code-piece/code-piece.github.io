@@ -7,9 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>[Hugo] Create new post - Code Piece</title>
-  <meta name="description" content="You can use command to create new post in Hugo.
-hugo new posts/my-post.md Drafts do not get deployed, therefore you update the header draft: false."><script type="application/ld+json">
+  <title>[Oracle] Partition Table - Code Piece</title>
+  <meta name="description" content="Create a monthly range-partitioned table starting from today.
+CREATE TABLE table_name ( ... date_column timestamp(6) ) PARTITION BY RANGE (date_column) INTERVAL (numtoyminterval(1,&#39;MONTH&#39;)) (PARTITION table_name_p1 VALUES LESS THAN (TO_DATE(&#39;12-MAR-2022&#39;,&#39;DD-MON-YYYY&#39;))); Additional: You need numtodsinterval(1,&lsquo;DAY&rsquo;) if you want to partition by day."><script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "WebSite",
@@ -44,8 +44,8 @@ hugo new posts/my-post.md Drafts do not get deployed, therefore you update the h
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/code-piece.github.io\/posts\/hugo-create-new-post\/",
-          "name": "[ hugo] create new post"
+          "@id": "https:\/\/code-piece.github.io\/posts\/oracle-partition-table\/",
+          "name": "[ oracle] partition table"
         }
     }]
 }
@@ -56,15 +56,15 @@ hugo new posts/my-post.md Drafts do not get deployed, therefore you update the h
   "author": {
     "name" : ""
   },
-  "headline": "[Hugo] Create new post",
-  "description" : "You can use command to create new post in Hugo.\nhugo new posts\/my-post.md Drafts do not get deployed, therefore you update the header draft: false.",
+  "headline": "[Oracle] Partition Table",
+  "description" : "Create a monthly range-partitioned table starting from today.\nCREATE TABLE table_name ( ... date_column timestamp(6) ) PARTITION BY RANGE (date_column) INTERVAL (numtoyminterval(1,\u0026#39;MONTH\u0026#39;)) (PARTITION table_name_p1 VALUES LESS THAN (TO_DATE(\u0026#39;12-MAR-2022\u0026#39;,\u0026#39;DD-MON-YYYY\u0026#39;))); Additional: You need numtodsinterval(1,\u0026lsquo;DAY\u0026rsquo;) if you want to partition by day.",
   "inLanguage" : "en",
-  "wordCount":  25 ,
-  "datePublished" : "2022-03-09T23:33:08",
-  "dateModified" : "2022-03-09T23:33:08",
+  "wordCount":  39 ,
+  "datePublished" : "2022-03-12T00:26:30",
+  "dateModified" : "2022-03-12T00:26:30",
   "image" : "https:\/\/code-piece.github.io",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https:\/\/code-piece.github.io\/posts\/hugo-create-new-post\/",
+  "mainEntityOfPage" : "https:\/\/code-piece.github.io\/posts\/oracle-partition-table\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/code-piece.github.io",
@@ -78,16 +78,16 @@ hugo new posts/my-post.md Drafts do not get deployed, therefore you update the h
 }
 </script>
 
-<meta property="og:title" content="[Hugo] Create new post" />
-<meta property="og:description" content="You can use command to create new post in Hugo.
-hugo new posts/my-post.md Drafts do not get deployed, therefore you update the header draft: false.">
-<meta property="og:url" content="https://code-piece.github.io/posts/hugo-create-new-post/" />
+<meta property="og:title" content="[Oracle] Partition Table" />
+<meta property="og:description" content="Create a monthly range-partitioned table starting from today.
+CREATE TABLE table_name ( ... date_column timestamp(6) ) PARTITION BY RANGE (date_column) INTERVAL (numtoyminterval(1,&#39;MONTH&#39;)) (PARTITION table_name_p1 VALUES LESS THAN (TO_DATE(&#39;12-MAR-2022&#39;,&#39;DD-MON-YYYY&#39;))); Additional: You need numtodsinterval(1,&lsquo;DAY&rsquo;) if you want to partition by day.">
+<meta property="og:url" content="https://code-piece.github.io/posts/oracle-partition-table/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Code Piece" />
 
-  <meta name="twitter:title" content="[Hugo] Create new post" />
-  <meta name="twitter:description" content="You can use command to create new post in Hugo.
-hugo new posts/my-post.md Drafts do not get deployed, therefore you update the header draft: false.">
+  <meta name="twitter:title" content="[Oracle] Partition Table" />
+  <meta name="twitter:description" content="Create a monthly range-partitioned table starting from today.
+CREATE TABLE table_name ( ... date_column timestamp(6) ) PARTITION BY RANGE (date_column) INTERVAL (numtoyminterval(1,&#39;MONTH&#39;)) …">
   <meta name="twitter:card" content="summary" />
   <meta name="generator" content="Hugo 0.92.0" />
   <link rel="alternate" href="https://code-piece.github.io/index.xml" type="application/rss+xml" title="Code Piece"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
@@ -197,7 +197,7 @@ hugo new posts/my-post.md Drafts do not get deployed, therefore you update the h
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="posts-heading">
               
-                <h1>[Hugo] Create new post</h1>
+                <h1>[Oracle] Partition Table</h1>
               
               
                 <hr class="small">
@@ -217,11 +217,16 @@ hugo new posts/my-post.md Drafts do not get deployed, therefore you update the h
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>You can use command to create new post in Hugo.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
- hugo new posts/my-post.md
+        <p>Create a monthly range-partitioned table starting from today.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">table_name</span>
+(
+ ...
+ date_column <span style="color:#66d9ef">timestamp</span>(<span style="color:#ae81ff">6</span>)
+) PARTITION <span style="color:#66d9ef">BY</span> RANGE (date_column)
+            INTERVAL (numtoyminterval(<span style="color:#ae81ff">1</span>,<span style="color:#e6db74">&#39;MONTH&#39;</span>)) 
+	    (PARTITION table_name_p1 <span style="color:#66d9ef">VALUES</span> <span style="color:#66d9ef">LESS</span> <span style="color:#66d9ef">THAN</span> (TO_DATE(<span style="color:#e6db74">&#39;12-MAR-2022&#39;</span>,<span style="color:#e6db74">&#39;DD-MON-YYYY&#39;</span>)));
 
-</code></pre></div><p>Drafts do not get deployed, therefore you update the header <code>draft: false</code>.</p>
+</code></pre></div><p>Additional: You need <code>numtodsinterval(1,&lsquo;DAY&rsquo;)</code> if you want to partition by day.</p>
 
 
         
@@ -234,10 +239,10 @@ hugo new posts/my-post.md Drafts do not get deployed, therefore you update the h
       
         <ul class="pager blog-pager">
           
-          
-            <li class="next">
-              <a href="https://code-piece.github.io/posts/oracle-partition-table/" data-toggle="tooltip" data-placement="top" title="[Oracle] Partition Table">Next Post &rarr;</a>
+            <li class="previous">
+              <a href="https://code-piece.github.io/posts/hugo-create-new-post/" data-toggle="tooltip" data-placement="top" title="[Hugo] Create new post">&larr; Previous Post</a>
             </li>
+          
           
         </ul>
       
