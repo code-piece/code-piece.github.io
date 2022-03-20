@@ -6,7 +6,19 @@
     <description>Recent content on Code Piece</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Mar 2022 00:26:30 +0700</lastBuildDate><atom:link href="https://code-piece.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Mar 2022 23:19:04 +0700</lastBuildDate><atom:link href="https://code-piece.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Oracle] Converting a Non-Partitioned Table to a Partitioned Table</title>
+      <link>https://code-piece.github.io/posts/oracle-convert-non-partitioned-to-partitioned-table/</link>
+      <pubDate>Sun, 20 Mar 2022 23:19:04 +0700</pubDate>
+      
+      <guid>https://code-piece.github.io/posts/oracle-convert-non-partitioned-to-partitioned-table/</guid>
+      <description>A non-partitioned table can be converted to a partitioned table with a MODIFY clause added to the ALTER TABLE SQL statement.
+In addition, the keyword ONLINE can be specified, enabling concurrent DML operations while conversion in ongoing.
+Conversion to a monthly range-partitioned table from today using the ONLINE keyword.
+ALTER TABLE table_name MODIFY PARTITION BY RANGE (date_column) INTERVAL (numtoyminterval(1,&amp;#39;MONTH&amp;#39;)) (PARTITION table_name_p1 VALUES LESS THAN (TO_DATE(&amp;#39;22-MAR-2022&amp;#39;,&amp;#39;DD-MON-YYYY&amp;#39;))) ONLINE; </description>
+    </item>
+    
     <item>
       <title>[Oracle] Partition Table</title>
       <link>https://code-piece.github.io/posts/oracle-partition-table/</link>
