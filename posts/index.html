@@ -193,9 +193,9 @@
     </p>
     <div class="post-entry">
         
-        <p>A non-partitioned table can be converted to a partitioned table with a <code>MODIFY<code> clause added to the <code>ALTER TABLE<code> SQL statement.</p>
-<p>In addition, the keyword <code>ONLINE<code> can be specified, enabling concurrent DML operations while conversion in ongoing.</p>
-<p>Conversion to a monthly range-partitioned table from today using the <code>ONLINE<code> keyword.</p>
+        <p>A non-partitioned table can be converted to a partitioned table with a <code>MODIFY</code> clause added to the <code>ALTER TABLE</code> SQL statement.</p>
+<p>In addition, the keyword <code>ONLINE</code> can be specified, enabling concurrent DML operations while conversion in ongoing.</p>
+<p>Conversion to a monthly range-partitioned table from today using the <code>ONLINE</code> keyword.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL">
 <span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">table_name</span> <span style="color:#66d9ef">MODIFY</span>
   PARTITION <span style="color:#66d9ef">BY</span> RANGE (date_column)
