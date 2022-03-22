@@ -10,7 +10,7 @@
   <title>Oracle convert json to table - Code Piece</title>
   <meta name="description" content="Input:
 [ { &#34;id&#34;: 1, &#34;name&#34;: &#34;Lucian&#34;, &#34;age&#34;: 18 }, { &#34;id&#34;: 2, &#34;name&#34;: &#34;Caitlyn&#34;, &#34;age&#34;: 25 }, { &#34;id&#34;: 3, &#34;name&#34;: &#34;Soraka&#34;, &#34;age&#34;: 28 } ] Output:
- IDNAMEAGE 1Lucian18 2Caitlyn25 3Soraka28  SELECT id, name, age FROM JSON_TABLE ( &#39;[{&#34;id&#34;:1, &#34;name&#34;:&#34;Lucian&#34;,&#34;age&#34;:18},{&#34;id&#34;:2,&#34;name&#34;:&#34;Caitlyn&#34;,&#34;age&#34;:25},{&#34;id&#34;:3,&#34;name&#34;:&#34;Soraka&#34;, &#34;age&#34;:28}]&#39;, &#39;$[*]&#39; COLUMNS ( id NUMBER PATH &#39;$.id&#39;, name VARCHAR2 ( 50 ) PATH &#39;$.name&#39;, age NUMBER PATH &#39;$.age&#39; ) ); "><script type="application/ld+json">
+ IDNAMEAGE 1Lucian18 2Caitlyn25 3Soraka28   SELECT id, name, age FROM JSON_TABLE ( &#39;[{&#34;id&#34;:1, &#34;name&#34;:&#34;Lucian&#34;,&#34;age&#34;:18},{&#34;id&#34;:2,&#34;name&#34;:&#34;Caitlyn&#34;,&#34;age&#34;:25},{&#34;id&#34;:3,&#34;name&#34;:&#34;Soraka&#34;, &#34;age&#34;:28}]&#39;, &#39;$[*]&#39; COLUMNS ( id NUMBER PATH &#39;$.id&#39;, name VARCHAR2 ( 50 ) PATH &#39;$.name&#39;, age NUMBER PATH &#39;$.age&#39; ) ); "><script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "WebSite",
@@ -58,7 +58,7 @@
     "name" : ""
   },
   "headline": "Oracle convert json to table",
-  "description" : "Input:\n[ { \u0026#34;id\u0026#34;: 1, \u0026#34;name\u0026#34;: \u0026#34;Lucian\u0026#34;, \u0026#34;age\u0026#34;: 18 }, { \u0026#34;id\u0026#34;: 2, \u0026#34;name\u0026#34;: \u0026#34;Caitlyn\u0026#34;, \u0026#34;age\u0026#34;: 25 }, { \u0026#34;id\u0026#34;: 3, \u0026#34;name\u0026#34;: \u0026#34;Soraka\u0026#34;, \u0026#34;age\u0026#34;: 28 } ] Output:\n IDNAMEAGE 1Lucian18 2Caitlyn25 3Soraka28  SELECT id, name, age FROM JSON_TABLE ( \u0026#39;[{\u0026#34;id\u0026#34;:1, \u0026#34;name\u0026#34;:\u0026#34;Lucian\u0026#34;,\u0026#34;age\u0026#34;:18},{\u0026#34;id\u0026#34;:2,\u0026#34;name\u0026#34;:\u0026#34;Caitlyn\u0026#34;,\u0026#34;age\u0026#34;:25},{\u0026#34;id\u0026#34;:3,\u0026#34;name\u0026#34;:\u0026#34;Soraka\u0026#34;, \u0026#34;age\u0026#34;:28}]\u0026#39;, \u0026#39;$[*]\u0026#39; COLUMNS ( id NUMBER PATH \u0026#39;$.id\u0026#39;, name VARCHAR2 ( 50 ) PATH \u0026#39;$.name\u0026#39;, age NUMBER PATH \u0026#39;$.age\u0026#39; ) ); ",
+  "description" : "Input:\n[ { \u0026#34;id\u0026#34;: 1, \u0026#34;name\u0026#34;: \u0026#34;Lucian\u0026#34;, \u0026#34;age\u0026#34;: 18 }, { \u0026#34;id\u0026#34;: 2, \u0026#34;name\u0026#34;: \u0026#34;Caitlyn\u0026#34;, \u0026#34;age\u0026#34;: 25 }, { \u0026#34;id\u0026#34;: 3, \u0026#34;name\u0026#34;: \u0026#34;Soraka\u0026#34;, \u0026#34;age\u0026#34;: 28 } ] Output:\n IDNAMEAGE 1Lucian18 2Caitlyn25 3Soraka28   SELECT id, name, age FROM JSON_TABLE ( \u0026#39;[{\u0026#34;id\u0026#34;:1, \u0026#34;name\u0026#34;:\u0026#34;Lucian\u0026#34;,\u0026#34;age\u0026#34;:18},{\u0026#34;id\u0026#34;:2,\u0026#34;name\u0026#34;:\u0026#34;Caitlyn\u0026#34;,\u0026#34;age\u0026#34;:25},{\u0026#34;id\u0026#34;:3,\u0026#34;name\u0026#34;:\u0026#34;Soraka\u0026#34;, \u0026#34;age\u0026#34;:28}]\u0026#39;, \u0026#39;$[*]\u0026#39; COLUMNS ( id NUMBER PATH \u0026#39;$.id\u0026#39;, name VARCHAR2 ( 50 ) PATH \u0026#39;$.name\u0026#39;, age NUMBER PATH \u0026#39;$.age\u0026#39; ) ); ",
   "inLanguage" : "en",
   "wordCount":  62 ,
   "datePublished" : "2022-03-22T15:27:53",
@@ -82,7 +82,7 @@
 <meta property="og:title" content="Oracle convert json to table" />
 <meta property="og:description" content="Input:
 [ { &#34;id&#34;: 1, &#34;name&#34;: &#34;Lucian&#34;, &#34;age&#34;: 18 }, { &#34;id&#34;: 2, &#34;name&#34;: &#34;Caitlyn&#34;, &#34;age&#34;: 25 }, { &#34;id&#34;: 3, &#34;name&#34;: &#34;Soraka&#34;, &#34;age&#34;: 28 } ] Output:
- IDNAMEAGE 1Lucian18 2Caitlyn25 3Soraka28  SELECT id, name, age FROM JSON_TABLE ( &#39;[{&#34;id&#34;:1, &#34;name&#34;:&#34;Lucian&#34;,&#34;age&#34;:18},{&#34;id&#34;:2,&#34;name&#34;:&#34;Caitlyn&#34;,&#34;age&#34;:25},{&#34;id&#34;:3,&#34;name&#34;:&#34;Soraka&#34;, &#34;age&#34;:28}]&#39;, &#39;$[*]&#39; COLUMNS ( id NUMBER PATH &#39;$.id&#39;, name VARCHAR2 ( 50 ) PATH &#39;$.name&#39;, age NUMBER PATH &#39;$.age&#39; ) ); ">
+ IDNAMEAGE 1Lucian18 2Caitlyn25 3Soraka28   SELECT id, name, age FROM JSON_TABLE ( &#39;[{&#34;id&#34;:1, &#34;name&#34;:&#34;Lucian&#34;,&#34;age&#34;:18},{&#34;id&#34;:2,&#34;name&#34;:&#34;Caitlyn&#34;,&#34;age&#34;:25},{&#34;id&#34;:3,&#34;name&#34;:&#34;Soraka&#34;, &#34;age&#34;:28}]&#39;, &#39;$[*]&#39; COLUMNS ( id NUMBER PATH &#39;$.id&#39;, name VARCHAR2 ( 50 ) PATH &#39;$.name&#39;, age NUMBER PATH &#39;$.age&#39; ) ); ">
 <meta property="og:url" content="https://code-piece.github.io/posts/oracle-convert-json-to-table/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Code Piece" />
@@ -245,6 +245,7 @@
  <tr><td>2</td><td>Caitlyn</td><td>25</td></tr>
  <tr><td>3</td><td>Soraka</td><td>28</td></tr>
  </table>
+<br/>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL"><span style="color:#66d9ef">SELECT</span>
    id,
    name,

@@ -15,7 +15,7 @@
       <guid>https://code-piece.github.io/posts/oracle-convert-json-to-table/</guid>
       <description>Input:
 [ { &amp;#34;id&amp;#34;: 1, &amp;#34;name&amp;#34;: &amp;#34;Lucian&amp;#34;, &amp;#34;age&amp;#34;: 18 }, { &amp;#34;id&amp;#34;: 2, &amp;#34;name&amp;#34;: &amp;#34;Caitlyn&amp;#34;, &amp;#34;age&amp;#34;: 25 }, { &amp;#34;id&amp;#34;: 3, &amp;#34;name&amp;#34;: &amp;#34;Soraka&amp;#34;, &amp;#34;age&amp;#34;: 28 } ] Output:
- IDNAMEAGE 1Lucian18 2Caitlyn25 3Soraka28  SELECT id, name, age FROM JSON_TABLE ( &amp;#39;[{&amp;#34;id&amp;#34;:1, &amp;#34;name&amp;#34;:&amp;#34;Lucian&amp;#34;,&amp;#34;age&amp;#34;:18},{&amp;#34;id&amp;#34;:2,&amp;#34;name&amp;#34;:&amp;#34;Caitlyn&amp;#34;,&amp;#34;age&amp;#34;:25},{&amp;#34;id&amp;#34;:3,&amp;#34;name&amp;#34;:&amp;#34;Soraka&amp;#34;, &amp;#34;age&amp;#34;:28}]&amp;#39;, &amp;#39;$[*]&amp;#39; COLUMNS ( id NUMBER PATH &amp;#39;$.id&amp;#39;, name VARCHAR2 ( 50 ) PATH &amp;#39;$.name&amp;#39;, age NUMBER PATH &amp;#39;$.age&amp;#39; ) ); </description>
+ IDNAMEAGE 1Lucian18 2Caitlyn25 3Soraka28   SELECT id, name, age FROM JSON_TABLE ( &amp;#39;[{&amp;#34;id&amp;#34;:1, &amp;#34;name&amp;#34;:&amp;#34;Lucian&amp;#34;,&amp;#34;age&amp;#34;:18},{&amp;#34;id&amp;#34;:2,&amp;#34;name&amp;#34;:&amp;#34;Caitlyn&amp;#34;,&amp;#34;age&amp;#34;:25},{&amp;#34;id&amp;#34;:3,&amp;#34;name&amp;#34;:&amp;#34;Soraka&amp;#34;, &amp;#34;age&amp;#34;:28}]&amp;#39;, &amp;#39;$[*]&amp;#39; COLUMNS ( id NUMBER PATH &amp;#39;$.id&amp;#39;, name VARCHAR2 ( 50 ) PATH &amp;#39;$.name&amp;#39;, age NUMBER PATH &amp;#39;$.age&amp;#39; ) ); </description>
     </item>
     
     <item>
