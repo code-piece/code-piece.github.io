@@ -15,12 +15,7 @@
       <guid>https://code-piece.github.io/posts/oracle-concate-values-in-same-colum/</guid>
       <description>Concatenate values in same column with comma delimited.
   Input
-|name|
------
-Teemo
-Malphite
-Sona
-  Output: Teemo,Malphite,Sona
+ column name Teemo Malphite Sona    Output: Teemo,Malphite,Sona
   SELECT LISTAGG(column_name, &amp;#39;,&amp;#39;) FROM table_name; </description>
     </item>
     
