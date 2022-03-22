@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://code-piece.github.io/posts/oracle-concate-values-in-same-colum/</loc>
-    <lastmod>2022-03-22T13:31:20+07:00</lastmod>
-  </url><url>
     <loc>https://code-piece.github.io/</loc>
-    <lastmod>2022-03-22T13:31:20+07:00</lastmod>
+    <lastmod>2022-03-22T15:27:53+07:00</lastmod>
+  </url><url>
+    <loc>https://code-piece.github.io/posts/oracle-convert-json-to-table/</loc>
+    <lastmod>2022-03-22T15:27:53+07:00</lastmod>
   </url><url>
     <loc>https://code-piece.github.io/posts/</loc>
+    <lastmod>2022-03-22T15:27:53+07:00</lastmod>
+  </url><url>
+    <loc>https://code-piece.github.io/posts/oracle-concate-values-in-same-colum/</loc>
     <lastmod>2022-03-22T13:31:20+07:00</lastmod>
   </url><url>
     <loc>https://code-piece.github.io/posts/oracle-convert-non-partitioned-to-partitioned-table/</loc>

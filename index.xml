@@ -6,7 +6,18 @@
     <description>Recent content on Code Piece</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Mar 2022 13:31:20 +0700</lastBuildDate><atom:link href="https://code-piece.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Mar 2022 15:27:53 +0700</lastBuildDate><atom:link href="https://code-piece.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oracle convert json to table</title>
+      <link>https://code-piece.github.io/posts/oracle-convert-json-to-table/</link>
+      <pubDate>Tue, 22 Mar 2022 15:27:53 +0700</pubDate>
+      
+      <guid>https://code-piece.github.io/posts/oracle-convert-json-to-table/</guid>
+      <description>Input:
+[ { &amp;#34;id&amp;#34;: 1, &amp;#34;name&amp;#34;: &amp;#34;Lucian&amp;#34;, &amp;#34;age&amp;#34;: 18 }, { &amp;#34;id&amp;#34;: 2, &amp;#34;name&amp;#34;: &amp;#34;Caitlyn&amp;#34;, &amp;#34;age&amp;#34;: 25 }, { &amp;#34;id&amp;#34;: 3, &amp;#34;name&amp;#34;: &amp;#34;Soraka&amp;#34;, &amp;#34;age&amp;#34;: 28 } ] Output:
+ IDNAMEAGE 1Lucian18 2Caitlyn25 3Soraka28  SELECT id, name, age FROM JSON_TABLE ( &amp;#39;[{&amp;#34;id&amp;#34;:1, &amp;#34;name&amp;#34;:&amp;#34;Lucian&amp;#34;,&amp;#34;age&amp;#34;:18},{&amp;#34;id&amp;#34;:2,&amp;#34;name&amp;#34;:&amp;#34;Caitlyn&amp;#34;,&amp;#34;age&amp;#34;:25},{&amp;#34;id&amp;#34;:3,&amp;#34;name&amp;#34;:&amp;#34;Soraka&amp;#34;, &amp;#34;age&amp;#34;:28}]&amp;#39;, &amp;#39;$[*]&amp;#39; COLUMNS ( id NUMBER PATH &amp;#39;$.id&amp;#39;, name VARCHAR2 ( 50 ) PATH &amp;#39;$.name&amp;#39;, age NUMBER PATH &amp;#39;$.age&amp;#39; ) ); </description>
+    </item>
+    
     <item>
       <title>[Oracle] Concatenate values in same column</title>
       <link>https://code-piece.github.io/posts/oracle-concate-values-in-same-colum/</link>
