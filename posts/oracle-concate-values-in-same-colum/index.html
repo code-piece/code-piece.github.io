@@ -7,11 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>[Oracle] Converting a Non-Partitioned Table to a Partitioned Table - Code Piece</title>
-  <meta name="description" content="A non-partitioned table can be converted to a partitioned table with a MODIFY clause added to the ALTER TABLE SQL statement.
-In addition, the keyword ONLINE can be specified, enabling concurrent DML operations while conversion in ongoing.
-Conversion to a monthly range-partitioned table from today using the ONLINE keyword.
-ALTER TABLE table_name MODIFY PARTITION BY RANGE (date_column) INTERVAL (numtoyminterval(1,&#39;MONTH&#39;)) (PARTITION table_name_p1 VALUES LESS THAN (TO_DATE(&#39;22-MAR-2022&#39;,&#39;DD-MON-YYYY&#39;))) ONLINE; "><script type="application/ld+json">
+  <title>[Oracle] Concatenate values in same column - Code Piece</title>
+  <meta name="description" content="Concatenate values in same column with comma delimited.
+  Input name Teemo Malphite Sona
+  Output: Teemo,Malphite,Sona
+  SELECT LISTAGG(column_name, &#39;,&#39;) FROM table_name; "><script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "WebSite",
@@ -46,8 +46,8 @@ ALTER TABLE table_name MODIFY PARTITION BY RANGE (date_column) INTERVAL (numtoym
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/code-piece.github.io\/posts\/oracle-convert-non-partitioned-to-partitioned-table\/",
-          "name": "[ oracle] converting a non partitioned table to a partitioned table"
+          "@id": "https:\/\/code-piece.github.io\/posts\/oracle-concate-values-in-same-colum\/",
+          "name": "[ oracle] concatenate values in same column"
         }
     }]
 }
@@ -58,15 +58,15 @@ ALTER TABLE table_name MODIFY PARTITION BY RANGE (date_column) INTERVAL (numtoym
   "author": {
     "name" : ""
   },
-  "headline": "[Oracle] Converting a Non-Partitioned Table to a Partitioned Table",
-  "description" : "A non-partitioned table can be converted to a partitioned table with a MODIFY clause added to the ALTER TABLE SQL statement.\nIn addition, the keyword ONLINE can be specified, enabling concurrent DML operations while conversion in ongoing.\nConversion to a monthly range-partitioned table from today using the ONLINE keyword.\nALTER TABLE table_name MODIFY PARTITION BY RANGE (date_column) INTERVAL (numtoyminterval(1,\u0026#39;MONTH\u0026#39;)) (PARTITION table_name_p1 VALUES LESS THAN (TO_DATE(\u0026#39;22-MAR-2022\u0026#39;,\u0026#39;DD-MON-YYYY\u0026#39;))) ONLINE; ",
+  "headline": "[Oracle] Concatenate values in same column",
+  "description" : "Concatenate values in same column with comma delimited.\n  Input name Teemo Malphite Sona\n  Output: Teemo,Malphite,Sona\n  SELECT LISTAGG(column_name, \u0026#39;,\u0026#39;) FROM table_name; ",
   "inLanguage" : "en",
-  "wordCount":  66 ,
-  "datePublished" : "2022-03-20T23:19:04",
-  "dateModified" : "2022-03-20T23:19:04",
+  "wordCount":  20 ,
+  "datePublished" : "2022-03-22T13:31:20",
+  "dateModified" : "2022-03-22T13:31:20",
   "image" : "https:\/\/code-piece.github.io",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https:\/\/code-piece.github.io\/posts\/oracle-convert-non-partitioned-to-partitioned-table\/",
+  "mainEntityOfPage" : "https:\/\/code-piece.github.io\/posts\/oracle-concate-values-in-same-colum\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/code-piece.github.io",
@@ -80,18 +80,20 @@ ALTER TABLE table_name MODIFY PARTITION BY RANGE (date_column) INTERVAL (numtoym
 }
 </script>
 
-<meta property="og:title" content="[Oracle] Converting a Non-Partitioned Table to a Partitioned Table" />
-<meta property="og:description" content="A non-partitioned table can be converted to a partitioned table with a MODIFY clause added to the ALTER TABLE SQL statement.
-In addition, the keyword ONLINE can be specified, enabling concurrent DML operations while conversion in ongoing.
-Conversion to a monthly range-partitioned table from today using the ONLINE keyword.
-ALTER TABLE table_name MODIFY PARTITION BY RANGE (date_column) INTERVAL (numtoyminterval(1,&#39;MONTH&#39;)) (PARTITION table_name_p1 VALUES LESS THAN (TO_DATE(&#39;22-MAR-2022&#39;,&#39;DD-MON-YYYY&#39;))) ONLINE; ">
-<meta property="og:url" content="https://code-piece.github.io/posts/oracle-convert-non-partitioned-to-partitioned-table/" />
+<meta property="og:title" content="[Oracle] Concatenate values in same column" />
+<meta property="og:description" content="Concatenate values in same column with comma delimited.
+  Input name Teemo Malphite Sona
+  Output: Teemo,Malphite,Sona
+  SELECT LISTAGG(column_name, &#39;,&#39;) FROM table_name; ">
+<meta property="og:url" content="https://code-piece.github.io/posts/oracle-concate-values-in-same-colum/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Code Piece" />
 
-  <meta name="twitter:title" content="[Oracle] Converting a Non-Partitioned Table to a Partitioned Table" />
-  <meta name="twitter:description" content="A non-partitioned table can be converted to a partitioned table with a MODIFY clause added to the ALTER TABLE SQL statement.
-In addition, the keyword ONLINE can be specified, enabling concurrent DML …">
+  <meta name="twitter:title" content="[Oracle] Concatenate values in same column" />
+  <meta name="twitter:description" content="Concatenate values in same column with comma delimited.
+  Input name Teemo Malphite Sona
+  Output: Teemo,Malphite,Sona
+  SELECT LISTAGG(column_name, &#39;,&#39;) FROM table_name; ">
   <meta name="twitter:card" content="summary" />
   <meta name="generator" content="Hugo 0.92.0" />
   <link rel="alternate" href="https://code-piece.github.io/index.xml" type="application/rss+xml" title="Code Piece"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
@@ -201,7 +203,7 @@ In addition, the keyword ONLINE can be specified, enabling concurrent DML …">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="posts-heading">
               
-                <h1>[Oracle] Converting a Non-Partitioned Table to a Partitioned Table</h1>
+                <h1>[Oracle] Concatenate values in same column</h1>
               
               
                 <hr class="small">
@@ -221,14 +223,21 @@ In addition, the keyword ONLINE can be specified, enabling concurrent DML …">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>A non-partitioned table can be converted to a partitioned table with a <code>MODIFY</code> clause added to the <code>ALTER TABLE</code> SQL statement.</p>
-<p>In addition, the keyword <code>ONLINE</code> can be specified, enabling concurrent DML operations while conversion in ongoing.</p>
-<p>Conversion to a monthly range-partitioned table from today using the <code>ONLINE</code> keyword.</p>
+        <p>Concatenate values in same column with comma delimited.</p>
+<ul>
+<li>
+<h2 id="name">Input
+name</h2>
+<p>Teemo
+Malphite
+Sona</p>
+</li>
+<li>
+<p>Output: Teemo,Malphite,Sona</p>
+</li>
+</ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL">
-<span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">table_name</span> <span style="color:#66d9ef">MODIFY</span>
-  PARTITION <span style="color:#66d9ef">BY</span> RANGE (date_column)
-            INTERVAL (numtoyminterval(<span style="color:#ae81ff">1</span>,<span style="color:#e6db74">&#39;MONTH&#39;</span>)) 
-	    (PARTITION table_name_p1 <span style="color:#66d9ef">VALUES</span> <span style="color:#66d9ef">LESS</span> <span style="color:#66d9ef">THAN</span> (TO_DATE(<span style="color:#e6db74">&#39;22-MAR-2022&#39;</span>,<span style="color:#e6db74">&#39;DD-MON-YYYY&#39;</span>))) ONLINE;
+<span style="color:#66d9ef">SELECT</span> LISTAGG(<span style="color:#66d9ef">column_name</span>, <span style="color:#e6db74">&#39;,&#39;</span>) <span style="color:#66d9ef">FROM</span> <span style="color:#66d9ef">table_name</span>;
 
 </code></pre></div>
 
@@ -243,13 +252,9 @@ In addition, the keyword ONLINE can be specified, enabling concurrent DML …">
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://code-piece.github.io/posts/oracle-partition-table/" data-toggle="tooltip" data-placement="top" title="[Oracle] Partition Table">&larr; Previous Post</a>
+              <a href="https://code-piece.github.io/posts/oracle-convert-non-partitioned-to-partitioned-table/" data-toggle="tooltip" data-placement="top" title="[Oracle] Converting a Non-Partitioned Table to a Partitioned Table">&larr; Previous Post</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://code-piece.github.io/posts/oracle-concate-values-in-same-colum/" data-toggle="tooltip" data-placement="top" title="[Oracle] Concatenate values in same column">Next Post &rarr;</a>
-            </li>
           
         </ul>
       

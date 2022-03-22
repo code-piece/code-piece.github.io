@@ -166,6 +166,58 @@
         <div class="posts-list">
           
             <article class="post-preview">
+    <a href="https://code-piece.github.io/posts/oracle-concate-values-in-same-colum/">
+        <h2 class="post-title">[Oracle] Concatenate values in same column</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on March 22, 2022
+  
+  
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <p>Concatenate values in same column with comma delimited.</p>
+<ul>
+<li>
+<h2 id="name">Input
+name</h2>
+<p>Teemo
+Malphite
+Sona</p>
+</li>
+<li>
+<p>Output: Teemo,Malphite,Sona</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL">
+<span style="color:#66d9ef">SELECT</span> LISTAGG(<span style="color:#66d9ef">column_name</span>, <span style="color:#e6db74">&#39;,&#39;</span>) <span style="color:#66d9ef">FROM</span> <span style="color:#66d9ef">table_name</span>;
+
+</code></pre></div>
+        
+    </div>
+
+    
+
+</article>
+          
+            <article class="post-preview">
     <a href="https://code-piece.github.io/posts/oracle-convert-non-partitioned-to-partitioned-table/">
         <h2 class="post-title">[Oracle] Converting a Non-Partitioned Table to a Partitioned Table</h2>
         

@@ -6,7 +6,19 @@
     <description>Recent content on Code Piece</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Mar 2022 23:19:04 +0700</lastBuildDate><atom:link href="https://code-piece.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Mar 2022 13:31:20 +0700</lastBuildDate><atom:link href="https://code-piece.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Oracle] Concatenate values in same column</title>
+      <link>https://code-piece.github.io/posts/oracle-concate-values-in-same-colum/</link>
+      <pubDate>Tue, 22 Mar 2022 13:31:20 +0700</pubDate>
+      
+      <guid>https://code-piece.github.io/posts/oracle-concate-values-in-same-colum/</guid>
+      <description>Concatenate values in same column with comma delimited.
+  Input name Teemo Malphite Sona
+  Output: Teemo,Malphite,Sona
+  SELECT LISTAGG(column_name, &amp;#39;,&amp;#39;) FROM table_name; </description>
+    </item>
+    
     <item>
       <title>[Oracle] Converting a Non-Partitioned Table to a Partitioned Table</title>
       <link>https://code-piece.github.io/posts/oracle-convert-non-partitioned-to-partitioned-table/</link>
